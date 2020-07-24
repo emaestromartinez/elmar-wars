@@ -27,8 +27,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
+            "styles": [              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -123,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "elmar-wars"
+    }
+  },
+  "defaultProject": "elmar-wars",
+  "cli": {
+    "analytics": "0b6cf693-61eb-474c-95d5-0c6f913db851"
+  }
 }
