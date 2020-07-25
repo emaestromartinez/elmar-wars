@@ -10,6 +10,15 @@
       "sourceType": "module" // Allows for the use of imports
     },
     "rules": {
-      // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
+      
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": ["off"],
+
+        "no-case-declarations": "off",
+        "import/no-unresolved": "off",
+        "no-use-before-define": "off",
+        "object-curly-newline": "off",
+        "implicit-arrow-linebreak": "off",
+        "max-len": ["error", { "code": 110 }]
     }
   }
