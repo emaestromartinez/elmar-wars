@@ -8,7 +8,7 @@ import { Movie } from '../models/movie.model';
   providedIn: 'root'
 })
 export class MoviesService {
-  apiURL = 'https://swapi.dev/api/';
+  apiURL = 'https://swapi.dev/api';
 
   constructor(private httpClient: HttpClient) {}
 
