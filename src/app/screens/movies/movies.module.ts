@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { MovieCardComponent } from '../../components/movie-card/movie-card.component';
+import { MoviesComponent } from './movies.component';
 
 @NgModule({
   imports: [],
-  exports: [MovieCardComponent],
-  declarations: [MovieCardComponent],
+  exports: [MoviesComponent, MovieCardComponent],
+  declarations: [MoviesComponent, MovieCardComponent],
   providers: []
 })
 export class MoviesModule {}
