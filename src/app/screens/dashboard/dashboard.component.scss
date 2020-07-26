@@ -1,0 +1,27 @@
+@import 'src/assets/constants/colors.scss';
+
+.container {
+    margin: 10px;
+        
+    .main-title {
+        font-size: 32px;
+        
+    }
+    .main-text {
+        padding: 12px 0 12px 0;
+        font-size: 26px;
+        max-width: 25rem;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-button {
+        color: $elmar-wars-logo-yellow;
+        background-color: $elmar-wars-logo-black;
+        font-size: 16px;
+        width: 6rem;
+        height: 3rem;
+    }
+
+}
