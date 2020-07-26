@@ -1,9 +1,9 @@
 
-<div style="padding: 13px;">
+<div class="container">
     
-    <mat-spinner *ngIf="!moviesList || moviesList.length===0"></mat-spinner>
+    <mat-spinner *ngIf="!moviesList || !moviesList.length" class="spinner"></mat-spinner>
 
-    <mat-card *ngFor="let movie of moviesList" style="margin-top:10px;">
+    <mat-card *ngFor="let movie of moviesList" class="movie-card">
         <app-movie-card [movie]="movie"></app-movie-card>
     </mat-card>
 
