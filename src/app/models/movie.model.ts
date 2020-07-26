@@ -1,7 +1,8 @@
 export class Movie {
   title: number;
-  releaseDate: Date;
+  release_date: Date;
   director: string;
-  producers: string[];
-  openingParagraphs: string;
+  // All producers are received separated by a comma;
+  producer: string;
+  opening_crawl: string;
 }

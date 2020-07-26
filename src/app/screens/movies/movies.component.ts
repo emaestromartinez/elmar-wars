@@ -22,8 +22,8 @@ export class MoviesComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subscriptions = [
       this._moviesService.listMovies().subscribe((list) => {
-        this.moviesList = list;
-        console.log('epalee');
+        // Mapping only the necessary information into moviesList;
+        this.moviesList = list.results;
       })
     ];
   }
