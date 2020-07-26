@@ -15,12 +15,15 @@ export class MoviesComponent implements OnInit, OnDestroy {
 
   subscriptions: SubscriptionLike[];
 
-  constructor(private _moviesService: MoviesService) {}
+  constructor(private _moviesService: MoviesService) {
+    this.moviesList = [];
+  }
 
   ngOnInit(): void {
     this.subscriptions = [
       this._moviesService.listMovies().subscribe((list) => {
         this.moviesList = list;
+        console.log('epalee');
       })
     ];
   }
