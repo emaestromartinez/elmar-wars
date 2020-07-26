@@ -20,7 +20,7 @@ export class MoviesService {
     return this.httpClient.get<Movie>(`${this.apiURL}/films/1`);
   }
 
-  public listMovies(): Observable<Movie[]> {
-    return this.httpClient.get<Movie[]>(`${this.apiURL}/films/`);
+  public listMovies(): Observable<any> {
+    return this.httpClient.get<any>(`${this.apiURL}/films/`);
   }
 }
