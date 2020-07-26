@@ -1,0 +1,10 @@
+
+<div class="container">
+    
+    <mat-spinner *ngIf="!charactersList || !charactersList.length" class="spinner"></mat-spinner>
+
+    <mat-card *ngFor="let character of charactersList" class="character-card">
+        <app-character-card [character]="character"></app-character-card>
+    </mat-card>
+
+</div>

@@ -1,8 +1,8 @@
 export class Character {
   name: number;
-  birthDate: Date;
+  birth_year: Date;
   height: string;
-  weight: string;
-  otherMovies: string[];
-  nativePlanet: string;
+  mass: string;
+  films: string[];
+  homeworld: string;
 }

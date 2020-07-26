@@ -16,6 +16,6 @@ export class DashboardComponent implements OnInit {
   }
 
   charactersNav(): void {
-    this.router.navigate(['/movies']);
+    this.router.navigate(['/characters']);
   }
 }

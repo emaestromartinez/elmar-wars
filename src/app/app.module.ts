@@ -6,10 +6,17 @@ import { AppComponent } from './app.component';
 
 import { SharedModule } from './screens/shared.module';
 import { MoviesModule } from './screens/movies/movies.module';
+import { CharactersModule } from './screens/characters/characters.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, MoviesModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    MoviesModule,
+    CharactersModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

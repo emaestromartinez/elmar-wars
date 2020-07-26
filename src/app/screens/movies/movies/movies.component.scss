@@ -1,0 +1,12 @@
+@import 'src/assets/constants/colors.scss';
+
+.container {
+    padding: 1rem;
+
+    .spinner { }
+
+    .movie-card {
+        margin: 3px;
+        background-color: $card-background;
+     }
+}
