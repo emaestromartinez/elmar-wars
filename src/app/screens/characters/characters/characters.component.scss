@@ -6,6 +6,9 @@
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    
+    width: 100%;
     .spinner { }
 
     .character-card {
