@@ -1,12 +1,19 @@
 @import 'src/assets/constants/colors.scss';
 
-.character-header {
+.container {
     
-    .character-title { }
-    .character-director {
-        color: $gray-font;
-        font-size: 16px;
-        margin-bottom: 7px;
+    .character-header {
+        
+        .character-title { }
+        .character-director {
+            color: $gray-font;
+            font-size: 16px;
+            margin-bottom: 7px;
+        }
+        .character-date { }
     }
-    .character-date { }
+
+    .character-content {
+    }
+
 }

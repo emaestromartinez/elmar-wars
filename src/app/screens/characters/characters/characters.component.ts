@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { SubscriptionLike } from 'rxjs';
 
+import {
+  CdkDragDrop,
+  moveItemInArray,
+  transferArrayItem
+} from '@angular/cdk/drag-drop';
+
 import { CharactersService } from 'src/app/services/characters.service';
 import { Character } from 'src/app/models/character.model';
 
@@ -11,6 +17,7 @@ import { Character } from 'src/app/models/character.model';
 })
 export class CharactersComponent implements OnInit {
   charactersList: Character[];
+  dragAndDropRows: Character[][];
 
   subscriptions: SubscriptionLike[];
 
@@ -23,6 +30,8 @@ export class CharactersComponent implements OnInit {
       this._charactersService.listCharacters().subscribe((list) => {
         // Mapping only the necessary information into charactersList;
         this.charactersList = list.results;
+
+        for (let i = 0; i < this.charactersList.length; ++i) {}
       })
     ];
   }

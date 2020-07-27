@@ -1,16 +1,17 @@
-
-<mat-card-header class="character-header">
-    <mat-card-title class="character-title"> {{ character.name }} </mat-card-title>
-    <mat-card-subtitle>
-        <div class="character-director"> {{ character.homeworld }} </div>
-        <div class="character-date">{{ character.birth_year }} </div>
-    </mat-card-subtitle>
-</mat-card-header>
-<mat-card-content>
-    <p>
-       Height: {{character.height}}
-    </p>
-    <p>
-       Weight: {{character.mass}}
-    </p>
-</mat-card-content>
+<div class="container">
+    <mat-card-header class="character-header">
+        <mat-card-title class="character-title"> {{ character.name }} </mat-card-title>
+        <mat-card-subtitle>
+            <!-- <div class="character-director"> {{ character.homeworld }} </div> -->
+            <div class="character-date">{{ character.birth_year }} </div>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="character-content">
+        <div>
+        Height: {{character.height}}
+        </div>
+        <div>
+        Weight: {{character.mass}}
+        </div>
+    </mat-card-content>
+</div>
