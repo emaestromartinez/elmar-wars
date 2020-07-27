@@ -1,5 +1,5 @@
 
-<mat-card-header class="movie-header">
+<mat-card-header class="movie-header" *ngIf="movie">
     <mat-card-title class="movie-title"> {{ movie.title }} </mat-card-title>
     <mat-card-subtitle>
         <div class="movie-director"> {{ movie.director }} </div>
